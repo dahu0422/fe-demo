@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>渐进式图片</title>
+    <style>
+      .progressive {
+        position: relative;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: filter ease 1.5s;
+        filter: blur(20px);
+      }
+
+      .origin {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: blur(20px);
+      }
+
+      .origin.loaded {
+        opacity: 1;
+        filter: blur(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="progressive">
+      <img
+        class="placeholder"
+        src="https://xyshaokang.github.io/image-optimize/image/cat-young-animal-curious-wildcat-40.jpg"
+        alt="placeholder image"
+      />
+      <img
+        class="origin"
+        src="https://xyshaokang.github.io/image-optimize/image/cat-young-animal-curious-wildcat-1600.jpg"
+        alt="origin image"
+      />
+    </div>
+  </body>
+
+  <script>
+    const imageToLoaded = document.querySelectorAll(".origin");
+
+    const loadImages = (image) => {
+      image.onload = () => {
+        image.classList.add("loaded");
+      };
+    };
+
+    imageToLoaded.forEach((image) => {
+      loadImages(image);
+    });
+  </script>
+</html>
