@@ -28,6 +28,6 @@
 
 ## 参考
 
-[MDN-图片占位符](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Loading#%E5%9B%BE%E7%89%87)
-[大伟聊前端-渐进式图片](https://www.bilibili.com/video/BV1Q24y1L7ew/?spm_id_from=333.337.search-card.all.click&vd_source=dce7b1ab94acfc972ab20009a0109fd3)
-[渡一-渐进式图片](https://www.bilibili.com/video/BV1GssYeAEAB/?spm_id_from=333.337.search-card.all.click&vd_source=dce7b1ab94acfc972ab20009a0109fd3)
+- [MDN-图片占位符](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Loading#%E5%9B%BE%E7%89%87)
+- [大伟聊前端-渐进式图片](https://www.bilibili.com/video/BV1Q24y1L7ew/?spm_id_from=333.337.search-card.all.click&vd_source=dce7b1ab94acfc972ab20009a0109fd3)
+- [渡一-渐进式图片](https://www.bilibili.com/video/BV1GssYeAEAB/?spm_id_from=333.337.search-card.all.click&vd_source=dce7b1ab94acfc972ab20009a0109fd3)

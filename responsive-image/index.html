@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>响应式图片</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        background-color: gray;
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <h1>responsive image</h1>
+
+      <p>
+        Eiusmod laborum laboris ipsum do excepteur id ullamco laborum dolor. Est laboris Lorem dolore consectetur nisi
+        culpa consectetur dolor sunt cupidatat veniam fugiat. Incididunt id est aliquip deserunt labore tempor cillum id
+        Lorem. Veniam tempor ipsum reprehenderit sit sint ad in minim id.
+      </p>
+
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="
+            https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-480w-close-portrait.jpg
+          "
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-800w.jpg"
+        />
+        <img
+          src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-800w.jpg"
+          alt="Chris standing up holding his daughter Elva"
+        />
+      </picture>
+    </section>
+  </body>
+</html>
